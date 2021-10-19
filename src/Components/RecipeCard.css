@@ -1,0 +1,22 @@
+.recipeCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 40vw;
+    border : solid 1px rgba(128, 128, 128, 0.11);
+    margin : 30px 0;
+    padding : 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.basicDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.widthDet {
+    width : 70vw;
+    justify-content: space-around;
+
+}
