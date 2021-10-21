@@ -4,6 +4,7 @@ import './App.css';
 import SearchBar from './Components/SearchBar/SearchBar.js';
 import axios from 'axios';
 import RecipeCard from './Components/RecipeCard.js';
+import 'antd/dist/antd.css';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         const response = await axios.get(
           `https://api.edamam.com/search?q=${keyword}&app_id=2dc038ad&app_key=8cfc277b86085b016d10d9b90c3af9ee&from=0&to=12`)
         { response ? setRecipes(response.data) : setRecipes(null)}    
-        
+        console.log(recipes)
       }
       catch (err){
         console.log(err)

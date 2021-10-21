@@ -1,5 +1,6 @@
 import React , {useState} from 'react'
-
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 
 
@@ -10,8 +11,8 @@ const SearchBar = (props) =>{
    return (
 
    <div className="searchCont">
-       <input type="text" name="" id="searchInput" onChange={(e)=>{setInput(e.target.value)}} />
-       <button onClick={() => {props.getRecipes(input)}}>Search</button>
+       <TextField id="outlined-basic" label="Search" variant="outlined" onChange={(e)=>{setInput(e.target.value)}} />
+       <Button variant="contained" onClick={() => {props.getRecipes(input)}}>Search</Button>
 
     </div>
    )
